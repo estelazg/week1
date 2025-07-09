@@ -1,31 +1,34 @@
 body{
     font-family: Noto Sans TC,sans-serif;
-    line-height: 150%;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 .header{
-    display: block;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .4)),url("../images/header.png");
-    /* background-image: url("../images/header.png"); */
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     padding: 160px;
     background-position-y:center ;   
 }
 
-h1{
+header h1{
     font-size: 40px;
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: 0.05em;
     color: white;
 }
 
-h2{
+.content h2{
     font-size: 24px;
     line-height: 120%;
     font-weight: 700;
-    letter-spacing: 0.05em;
     padding-bottom: 24px;    
 }
 
@@ -80,6 +83,7 @@ h3{
 .history li{
     margin-bottom: 12px;
     padding-left: 12px;
+    list-style:disc;
 }
 .history span{
     border-left: 1px solid black;
@@ -96,11 +100,14 @@ h3{
 
 .story li{
     margin-bottom: 12px;
+    vertical-align: middle;
 }
 
 .story li a{
     color: #57A203;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }   
 
 .story li a:hover{
@@ -110,4 +117,17 @@ h3{
 .story span{
     border-bottom: 1px solid #57A203;
     padding-left: 10px;
+}
+
+footer{
+    background-color:#F8F9FA;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c757D;
+    text-align: center;
 }
